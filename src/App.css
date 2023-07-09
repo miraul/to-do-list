@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-width: 600px;
+  
+
+}
+
+
+
+
+.main-input-area {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+
+
+}
+
+.main-input-area input {
+  
+  border-radius: 20px;
+  min-height: 30px;
+  font-size: 30px;
+  padding-left: 15px;
+  width: 450px;
+
+}
+
+.main-input-area button {
+  border-radius: 50%;
+  margin-left: 5px;
+  height: 40px;
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.main-input-area button:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content:space-between;
+  border: solid 1px black;
+  margin: 6px;
+  min-width: 600px;
+  min-height: 38px; 
 }
+
+
+.todo-container button {
+  width: 75px;
+  min-height: 38px;
+  font-size: 15px;
+}
+
+.todo-container-input{
+  font-size: 20px;
+  width: 440px;
+  height: 32px;
+  border: none;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.todo-container-input2{
+  font-size: 20px;
+  width: 440px;
+  height: 32px;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  line-height: 30px;
+  border: none;
+
+}
+
+.strikey {
+  text-decoration: line-through;
+  background-color: rgb(9,9,121);
+background-color: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 3%, rgba(0,212,255,0.6797093837535014) 50%);
+color:white;
+  
+}
+
